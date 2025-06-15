@@ -1,0 +1,389 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #f9fdfe;
+    height: 100vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;  
+    line-height: 1.6;
+    color: #333;
+}
+h1, h2, h3 {
+    color: #00416a; /* Um azul escuro elegante */
+    letter-spacing: 1px; /* Espaço entre letras */
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #00416a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0066cc;
+}
+
+.flex{
+    display: flex;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.nometitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    color: #737373; 
+    background-color: #f9fdfe; 
+}    
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.423);  
+    border: 1px solid #0000003a;
+    transition: .2s;
+}
+button:hover{
+    color: #000;
+}
+/*ESTILO DO CABEÇALHO*/
+
+header{
+    margin-top: 10px;
+    padding: 20px 7%;
+    border-radius: 80px;
+}
+header:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.423);
+    transition: .2s;
+    border: 1px solid #0000003a;
+}
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color:#737373;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;    
+}
+header a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+.social {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.social a {
+    color: #000;
+    font-size: 28px;
+    transition: transform 0.3s;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    color: #00416ac3;
+}
+/*ESTILO TOPO DO SITE*/
+section.topo-site{
+    padding: 40px 4%;
+    margin-top: 10px;
+}
+
+section.topo-site .flex{
+    align-items:center;
+    display: flex;
+    justify-content:space-between;
+    gap: 40px;
+}
+.txt-topo-site{
+    flex: 1;
+    min-width: 300px;
+}
+.interface .titulo h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    line-height: 40px;
+}
+.txt-topo-site .descricao p{
+    color: #000000;
+    margin: 40px 0;
+    font-size: 18px;
+}
+.txt-topo-site .descricao p span{
+    color: #00416a;
+}
+.txt-topo-site, .img-topo-site{
+    flex: 1;
+    min-width: 300px; 
+}
+.img-topo-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 300px;
+}
+.img-topo-site img{
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+.menu .desktop ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu .desktop ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+/*MINHAS HABILIDADES*/
+section.habilidades-site {
+    padding: 50px 4%;
+}
+section.habilidades-site .flex{
+    align-items:center;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+section.habilidades-site .titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.interface .titulo h2{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    line-height: 40px;
+}
+.habilidades{
+    color: #000000;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    min-width: 150px;
+    transition: 0.2s;
+    height: 30%;   
+}
+.habilidades:hover{
+    box-shadow: 0px 0px 12px #211922;
+    transform: scale(1.05);
+    max-height: 100%;
+
+}
+.habilidades h3{
+    font-size: 18px;
+    margin: 15px 0;
+}
+/*MEUS PROJETOS*/
+section.portifolio {
+    padding: 80px 4%;
+}
+section.portifolio .flex {
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+.projetos{ 
+    position: relative;
+}
+.projetos img{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    filter: brightness(0.5);
+    display: block;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #e3dAC9;
+    opacity: 0;
+    border-radius: 20px;
+    z-index: 1;
+}
+.projetos:hover{
+    transform: scale(1.02);
+    transition: .2s;
+    filter: brightness(1.0);
+}
+.projetos:hover .overlay{
+    opacity: 1;
+    transform: scale(1.02);
+    transition: .2s;
+}
+/*FALE COMIGO*/
+section.contato{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #00000041;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 100px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: #00416a;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+/*FOOTER*/
+footer{
+    padding: 40px 4%;
+    background-color: #f0ebe3; 
+}
+footer:hover{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.423); 
+    transition: .2s;
+}
+.line-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Para manter o layout responsivo */
+}
+
+.footer-left {
+    text-align: left;
+    color: black;
+}
+
+.footer-left h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-left a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.footer-right a {
+    color: black;
+    font-size: 28px;
+    transition: transform 0.3s;
+}
+
+.footer-right a:hover {
+    transform: scale(1.2);
+    color: #00416ac0;
+}
+/*DISPOSTIVOS MENORES*/
+@media (max-width: 768px) {
+    section.topo-site .flex {
+        flex-direction: column;   /* Coloca em coluna no celular */
+        text-align: center;        /* Centraliza o texto */
+        gap: 20px;                 /* Espaço menor entre itens */
+    }
+
+    .img-topo-site img {
+        max-width: 80%;            /* Faz a imagem caber na tela */
+    }
+
+    header nav ul li {
+        padding: 10px 0;           /* Deixa os itens do menu com espaço em mobile */
+    }
+}
+@media (max-width: 768px) {
+    .interface .titulo h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .txt-topo-site .descricao p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    form {
+        padding: 0 10px;
+    }
+
+    .line-footer {
+        flex-direction: column;  /* Empilha o conteúdo no mobile */
+        gap: 20px;               /* Espaço entre nome e redes no footer */
+    }
+}

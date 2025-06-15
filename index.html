@@ -1,0 +1,156 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Web Portifólio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="nometitulo">
+                <h1>NICOLAS</h1>    
+                <h1>OSWALDO</h1>
+            </div>
+            <nav class="menu desktop">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Especilidade</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Fale Comigo</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div> <!--interface-->
+    </header>
+    <main>
+        <section class ="topo-site">
+            <div class="interface">
+                <div class="titulo">
+                    <h2>Sobre Mim.</h2>
+                </div>
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <div class="descricao">
+                            <p><span>Sou estudante de Ciência da Computação na PUCPR</span>, onde venho desenvolvendo habilidades em programação, resolução de problemas e projetos voltados à tecnologia. Estou sempre em busca de novos desafios e aprendizados na área de desenvolvimento de software.</p>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.instagram.com/wnletti?igsh=bjFhbzJrNWptc3By" target="_blank"><!--link-do-social-->
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="https://github.com/GeorgeCauda">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nigolas-letti-6a572a34a/">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="imagemTopoSite/imagem-topo2.jpeg" alt="NICOLAS" > 
+                    </div><!--imagem-topo-->
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-site-->
+        <section class ="habilidades-site">
+            <div class="interface">
+                <div class="titulo">
+                    <h2>Minhas Habilidades.</h2>
+                </div>
+                    <div class="flex">                 
+                        <div class="habilidades" onclick="mostrarNome(this)">
+                            <img src="ImagemHabilidades/logo-html5.svg" alt="habilidade Um"
+                            width="100px" height="100px">
+                            <h3 style="display: none;">HTML</h3>
+                        </div>
+                        <div class="habilidades" onclick="mostrarNome(this)">
+                            <img src="ImagemHabilidades/logo-css3.svg" alt="habilidade Dois"
+                            width="100px" height="100px">
+                            <h3 style="display: none;">CSS</h3>
+                        </div>
+                        <div class="habilidades" onclick="mostrarNome(this)">
+                            <img src="ImagemHabilidades/logo-javascript.svg" alt="habilidades Tres"
+                            width="100px" height="100px">
+                            <h3 style="display: none;">JavaScript</h3>
+                        </div>
+                        <div class="habilidades" onclick="mostrarNome(this)"    >
+                            <img src="ImagemHabilidades/logo-python.svg" alt="habilidade Quatro"
+                            width="100px" height="100px"><!--diminuir-mais-->
+                            <h3 style="display: none;">Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--Habilidades-->
+        <section class="portifolio">
+            <div class="interface">
+                <div class="titulo">
+                    <h2>Meus Projetos</h2>
+                </div>
+                <div class="flex">
+                    <div class="projetos">
+                        <img src="imagemProjetos/batalhanaval.png" alt="Batalha Naval"
+                        width="360px" height="460px">
+                        <div class="overlay">Batalha Naval</div>
+                    </div>
+                    <div class="projetos">
+                        <img src="imagemProjetos/EcoKids.jpeg" alt="Eco Kids"
+                        width="360px" height="460px">
+                        <div class="overlay">Eco Kids</div>
+                    </div>
+                </div><!--Meus-Projetos-->
+            </div><!--interface-->
+        </section><!--portifolio-->
+        <section class="contato">
+            <div class="interface">
+                <div class="titulo">
+                    <h2>Fale Comigo</h2>
+                </div>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="email" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="tel" name="" id="" placeholder="Seu número:" required>
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer flex">
+                <div class="footer-left">
+                    <div class="nometitulo">
+                        <h1>NICOLAS</h1>    
+                        <h1>OSWALDO</h1>
+                    </div>
+                    <p><i class="bi bi-envelope"></i><a href="mailto:heynigolas@gmail.com">heynigolas@gmail.com</a></p>
+                </div>
+                <div class="footer-right social">
+                    <a href="https://www.instagram.com/wnletti?igsh=bjFhbzJrNWptc3By" target="_blank"><!--link-do-social-->
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    <a href="https://github.com/GeorgeCauda">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nigolas-letti-6a572a34a/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script> 
+</body>
+</html>
