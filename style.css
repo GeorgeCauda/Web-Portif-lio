@@ -13,9 +13,12 @@ body{
     line-height: 1.6;
     color: #333;
 }
+html {
+    scroll-behavior: smooth;
+}
 h1, h2, h3 {
-    color: #00416a; /* Um azul escuro elegante */
-    letter-spacing: 1px; /* Espaço entre letras */
+    color: #00416a; 
+    letter-spacing: 1px; 
 }
 
 p {
@@ -317,7 +320,7 @@ footer:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Para manter o layout responsivo */
+    flex-wrap: wrap; 
 }
 
 .footer-left {
@@ -354,17 +357,17 @@ footer:hover{
 /*DISPOSTIVOS MENORES*/
 @media (max-width: 768px) {
     section.topo-site .flex {
-        flex-direction: column;   /* Coloca em coluna no celular */
-        text-align: center;        /* Centraliza o texto */
-        gap: 20px;                 /* Espaço menor entre itens */
+        flex-direction: column;   
+        text-align: center;        
+        gap: 20px;                 
     }
 
     .img-topo-site img {
-        max-width: 80%;            /* Faz a imagem caber na tela */
+        max-width: 80%;          
     }
 
     header nav ul li {
-        padding: 10px 0;           /* Deixa os itens do menu com espaço em mobile */
+        padding: 10px 0;          
     }
 }
 @media (max-width: 768px) {
@@ -383,7 +386,12 @@ footer:hover{
     }
 
     .line-footer {
-        flex-direction: column;  /* Empilha o conteúdo no mobile */
-        gap: 20px;               /* Espaço entre nome e redes no footer */
+        flex-direction: column; 
+        gap: 20px;               
+    }
+}
+@media (max-width: 768px) {
+    .menu.desktop {
+        display: none;
     }
 }
